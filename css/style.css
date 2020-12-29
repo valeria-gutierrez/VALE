@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+    color: black;
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 300;
+    line-height: 40px;
+}
+h3{
+    font-size: large;
+    font-weight: 100;
+    line-height: 20px;
+    /* text-align: center; */
+}
+p{
+    font-weight: 100;
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+/* NAVBAR */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A7BCD6;
+    color: white;
+    /* opacity: 0.8; */
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 0px;
+    padding: 0 30px;
+}
+.navbar a{
+    color: white;
+    padding: 10px 20px;
+    margin: o 5px;
+}
+.navbar a:hover{
+    border-bottom: whitesmoke 2px solid;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar .logo{
+    font-weight: 400;
+}
+s
+#about h2{
+    line-height: 2.2;
+}
+/* #about .meta{
+    display: inline-flex;
+} */
+
+#about {
+    width: 240px;
+    height: 100%;
+    padding: 15px;
+    /* margin-left: 15px; */
+    float: left;
+    background-color: lightgray;
+  }
+
+
+#about img{
+    width: 145px;
+    height: 185px;
+    border-radius: 35px;
+}
+
+/* #about-me img{
+
+    width: 400px;
+    height: 400px;
+    margin-left: 300px;
+    object-fit: contain;
+} */
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60px;
+    /* margin-top: 120px; */
+}
