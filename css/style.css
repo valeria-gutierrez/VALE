@@ -4,6 +4,33 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: Many Years;
+    src: url(../fonts/Many\ Years\ Higher.ttf);
+}
+@font-face {
+    font-family: DOS;
+    src: url(../fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf);
+}
+#fuente-personalizada{
+    font-family: Many Years;
+    font-size: 34px;
+    color: rgba(54, 54, 241, 0.658);
+}
+#fuente-dos{
+    font-family: DOS;
+    font-size: 14px;
+   
+}
+
+.navbar #fuente-dos {
+
+    font-family: DOS;
+    font-size: 18px;
+   
+}
+
+
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: white;
@@ -14,12 +41,14 @@ ul{
     list-style: none;
 }
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 h1,h2{
     font-weight: 300;
     line-height: 40px;
+    text-align: center;
+    
 }
 h3{
     font-size: large;
@@ -29,17 +58,35 @@ h3{
 }
 p{
     font-weight: 100;
-    margin: 10px 0;
+    margin: 20px 0;
+    
 }
 img{
     width: 100%;
-}
+} 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    /*Sets a radial-gradient (2 colors) as a background image for a <div> element*/
+    background-image: linear-gradient(#e66465, #9198e5);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
 /* NAVBAR */
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #A7BCD6;
+    background-color: #e3d2ee;
     color: white;
     /* opacity: 0.8; */
     width: 100%;
@@ -62,44 +109,81 @@ img{
 .navbar .logo{
     font-weight: 400;
 }
-s
-#about h2{
-    line-height: 2.2;
-}
-/* #about .meta{
-    display: inline-flex;
-} */
-
-#about {
-    width: 240px;
-    height: 100%;
-    padding: 15px;
-    /* margin-left: 15px; */
-    float: left;
-    background-color: lightgray;
-  }
 
 
-#about img{
-    width: 145px;
-    height: 185px;
-    border-radius: 35px;
-}
-
-/* #about-me img{
-
-    width: 400px;
-    height: 400px;
-    margin-left: 300px;
-    object-fit: contain;
-} */
-
-  .footer{
+#grafica{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    height: 60px;
-    /* margin-top: 120px; */
+    /* text-align: center; */
 }
+
+.slider-container{
+    margin: auto;
+    width: 400px;
+    padding: 30px;
+    background-color: #fcfcfcda;
+  
+  } 
+  /*QUITAR ESTILOS DE LISTA*/
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 60px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 90%;
+  }
+
+  

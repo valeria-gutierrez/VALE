@@ -1,101 +1,41 @@
+.text-primary{
+    color:#f7f6f8;
+}
+.text-secondary{
+    color: blue;
+}
+
 .bg-primary{
-    background-color: #A7BCD6;
+    background: #d0bbdf;
+    color: white;
 }
 
-
-.flex-columns .row{
+.bg-secondary{
+    background: rgb(255, 237, 248);
+    color: black;
+}
+.bg-dark{
+    background: black;
+    color: white;
+}
+.bg-light{
+    background: lightgray;
+    color: black; 
+}
+/* */
+.row{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
 }
-
-
-.flex-columns .column{
-    display: flex;
-    flex-direction: column;
-  
-}
-
-/* .flex-columns img{
-    width: 140px;
-    height: 140px;
-    border-radius: 20%;
-    object-fit: cover;
-  
-} */
-
-.flex-columns .row-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+aside{
+    flex: 30px;
     text-align: center;
     padding: 20px;
 }
-
-
-
-.flex-columns .row-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-   
-}
-
-.flex-columns .column-2 .meta {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center; 
-    align-items: center;
-    
-    align-content: center;
-    padding: 30px;
-}
-
-.flex-columns .row-1 p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+section{
+    flex: 70%;
     text-align: justify;
     padding: 20px;
-}
-.section-header{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.section-header h2{
-    font-size: 40px;
-    margin: 20px 0;
-}
-.section-padding{
-    padding: 20px 20px 0px;
-}
-/* FELX GRID */
-
-.flex-grid .row{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 30px;
-    padding-left: 200px;
-    padding-bottom: 20px;
-}
-
-.flex-grid .column{
-    flex: 40%;
-    max-width: 40%;
-    padding: 0 30px;
 }
 
 /* MOBILE */
@@ -109,12 +49,17 @@
         padding: 10px 10px;
         margin: 0 3px;
     }
-    .flex-items{
-        flex-direction: column;
+    .row img {
+        width: 50%; 
+        padding: 30px 0 0 0;
+      }
+   section .slider-container{
+        margin: auto;
+        background-color: #fcfcfcda;
+        width: 300px;
+        padding: 30px;
+      } 
+      section .slider-container img{
+        padding: 0;
     }
-    .flex-columns .column, .flex-grid .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-   
-}
+} 

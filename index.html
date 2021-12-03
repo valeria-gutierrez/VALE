@@ -1,92 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WELCOME</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body id="home">
     <header>
         <div id="navbar" class="navbar">
-            <h1 class="logo">
-               <span>VΛᄂΣ </span><i class="fas fa-peace"></i>
+            <h1 id="fuente-personalizada" class="logo">
+                <span>VALE </span>
             </h1>
-            <nav>
+            <nav id="fuente-dos">
                 <ul>
                     <li><a href="#about-me">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#knowledge">KNOWLEDGE</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
                     <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#contact">CONTACT ME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
-        
+
     </header>
     <main>
-        <aside id="about" class="about flex-columns">
-            <div class="column">
-                <div class="row">
-                    <div class="row-1">
-                        <img src="img/PERFIL.jpg" alt="">
-                        <h2>Valeria Gutiérrez</h2>
-                        <h3>Database Administrator</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row-2">
-                        <p>
-                            <i class="fas fa-birthday-cake"></i> July 27,1997
-                        </p>
-                        <p>
-                            <i class="fas fa-map-pin"></i> Mexico
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope-open-text"></i> vale_g_m@hotmail.com
-                        </p>
-                        <p>
-                            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/valeria-guti%C3%A9rrez-murillo/" target="_blank">My linkedin</a>
-                        </p>
-                        <p>
-                            <i class="fab fa-github"></i> <a href="https://github.com/valeria-gutierrez" target="_blank"> Check out some</a>
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quia sapiente in minima ullam! Laudantium corrupti pariatur dolores, aliquid unde voluptatibus aperiam harum vitae amet magni quas itaque accusamus quis!</p>
+        <div class="row">
+            <aside id="fuente-dos" class=" bg-primary">
+                <div class="card">
+                    <img src="img/VAPORGRAM2.png" alt="">
+                    <div class="container">
+                        <h3>VALERIA GUTIÉRREZ</h3>
+                        <p>DATABASE ADMINISTRATOR</p>
                     </div>
                 </div>
 
-            </div>
-            
+                <p>
+                    <i class="fas fa-birthday-cake"></i> JULY 27,1997
+                </p>
+                <p>
+                    <i class="fas fa-map-pin"></i> MÉXICO
+                </p>
+                <p>
+                    <i class="fas fa-envelope-open-text"></i> vale_g_m@hotmail.com
+                </p>
+                <p>
+                    <i class="fab fa-linkedin"></i> <a
+                        href="https://www.linkedin.com/in/valeria-guti%C3%A9rrez-murillo/" target="_blank">MY
+                        LINKEDIN</a>
+                </p>
+                <p>
+                    <i class="fab fa-github"></i> <a href="https://github.com/valeria-gutierrez"
+                        target="_blank">CODE!</a>
+                </p>
             </aside>
-            <section id="about-me" class="about-me flex-grid section-padding">
-                <header class="section-header">
-                
-                    <h2>ABOUT ME</h2>
-                    <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni distinctio consequatur soluta porro illum ipsam voluptatem ad necessitatibus ea ipsum consequuntur ipsa nihil cupiditate modi, atque deserunt autem. Deserunt esse repudiandae explicabo impedit temporibus voluptatibus, hic error voluptas minus id excepturi rem odit, et quos facilis molestiae veniam consequatur! Minus obcaecati quam commodi vitae deleniti quas quidem odio temporibus, et reiciendis dolore doloribus quae ab illo, odit accusantium. Repudiandae nesciunt quaerat in fuga maxime laudantium minus, consectetur doloremque placeat distinctio possimus quis, quam quae velit iste, voluptatem consequatur esse id rerum natus voluptates! Quaerat eligendi error veritatis atque dolor unde!</p>
-                </header>
-                <div class="row">
-                    <div class="column">
-                        <img src="img/books.jpg" alt="">
-                        <img src="img/books.jpg" alt="">
-                    </div>
-                    <div class="column">
-                        <img src="img/books.jpg" alt="">
-                        <img src="img/books.jpg" alt="">
-                    </div>
-                   
-            
+            <section class="bg-secondary">
+                <h2 id="fuente-personalizada">ABOUT ME</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore minima nihil. Sint ut animi
+                    accusantium laborum dolorem iure cupiditate excepturi odit, veritatis enim, a eos non reprehenderit
+                    quisquam soluta modi quos quis, exercitationem velit vel quas officiis magnam ipsa explicabo! Magni
+                    consectetur nisi, quidem veritatis harum accusamus commodi delectus ex! Quidem eius officia
+                    veritatis aut mollitia magnam illo minus quam possimus perferendis nihil deleniti saepe, asperiores
+                    eveniet qui enim quos repudiandae aliquid. Voluptatem rerum magnam provident ea aliquam dignissimos
+                    cupiditate id, cum molestias saepe quaerat maxime alias rem nobis distinctio, quisquam facere magni
+                    hic commodi quibusdam. Quae, pariatur ducimus?</p>
+                <div class="slider-container">
+                    <ul class="slider">
+                        <li id="slide1">
+                            <img src="img/MOON.jpg" />
+                        </li>
+                        <li id="slide2">
+                            <img src="img/TELESCOPE.jpg" />
+                        </li>  
+                    </ul>
+
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"></a>
+                        </li>
+                    </ul>
+
                 </div>
             </section>
-    
-              
-    </main>
-    <footer class="footer bg-primary">
-        <div >
-            <p>COPYRIGHT &copy; 2020 - VALE</p>
+
         </div>
-    </footer>
-    
+
+    </main>
 </body>
+
 </html>
