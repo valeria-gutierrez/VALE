@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script> -->
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -27,7 +27,7 @@
                 <ul>
                     <li><a href="#about-me">ABOUT</a></li>
                     <li><a href="skills.html">SKILLS</a></li>
-                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="Resume.pdf">RESUME</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -64,24 +64,43 @@
                         target="_blank">CODE!</a>
                 </p>
             </aside>
-            <section class="bg-secondary">
+            <section id="aboutme" class="bg-secondary">
                 <h2 id="fuente-personalizada">ABOUT ME</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore minima nihil. Sint ut animi
-                    accusantium laborum dolorem iure cupiditate excepturi odit, veritatis enim, a eos non reprehenderit
-                    quisquam soluta modi quos quis, exercitationem velit vel quas officiis magnam ipsa explicabo! Magni
-                    consectetur nisi, quidem veritatis harum accusamus commodi delectus ex! Quidem eius officia
-                    veritatis aut mollitia magnam illo minus quam possimus perferendis nihil deleniti saepe, asperiores
-                    eveniet qui enim quos repudiandae aliquid. Voluptatem rerum magnam provident ea aliquam dignissimos
-                    cupiditate id, cum molestias saepe quaerat maxime alias rem nobis distinctio, quisquam facere magni
-                    hic commodi quibusdam. Quae, pariatur ducimus?</p>
-                <div class="slider-container">
+                <p>Hello everyone. Welcome to my personal page, if you are here. it means you decided to check out my
+                    RESUME! (I hope so...) and of course to know more about me.
+                    I'm Valeria, but i like to be called 'Vale' better. <br>
+                    I majored in Applied Maths & Computer Science at FES-Acatlán,UNAM, the most prestigius university in
+                    Mexico. <br>
+                    When I was in 4th semester in college, I took databases and it was the best course I have ever took,
+                    that's why I decided to pursue a certified in DataBase Administration since it's my passion.
+                </p>
+                <div id="education">
+                    <h3>EDUCATION <i class="fas fa-graduation-cap"></i></h3> 
+                    <p><i class="far fa-calendar-alt"></i> August 2013 - <i class="far fa-calendar-alt"></i> June 2015 | Quick Learning (English Academy)</p>
+                    <hr>
+                    <li> Best Student February 2014</li>
+                    <p><i class="far fa-calendar-alt"></i> August 2012 - <i class="far fa-calendar-alt"></i> June 2015 | Colegio de Ciencias y Humanidades</p>
+                    <hr>
+                    <p><i class="far fa-calendar-alt"></i> August 2015 - <i class="far fa-calendar-alt"></i> June 2021 | Facultad de Estudio Superiores </p>
+                    <hr>
+                    <br>
+                    <h3>HOBBIES <i class="fas fa-film"></i></h3>
+                    <p>
+                        One of the things that I love is to go to the cinema, and watch a lot of movies (obviously).
+                        I also enjoy astronomy, that's is why I like to watch stars, planets and the moon in my free time.
+                        Below the are some pictures I took of the moon in 'La Noche de las Estrellas 2018'.
+                    </p>
+                </div>
+                <br>
+
+                <div id="container " class="slider-container">
                     <ul class="slider">
                         <li id="slide1">
                             <img src="img/MOON.jpg" />
                         </li>
                         <li id="slide2">
-                            <img src="img/TELESCOPE.jpg" />
-                        </li>  
+                            <img src="img/books.jpg" />
+                        </li>
                     </ul>
 
                     <ul class="menu">
@@ -99,6 +118,9 @@
         </div>
 
     </main>
+    <footer id="footer" class="footer">
+        Vale
+    </footer>
 </body>
 
 </html>

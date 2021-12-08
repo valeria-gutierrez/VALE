@@ -1,0 +1,23 @@
+Canvas {
+    position:absolute; 
+    left: 45%; 
+    margin-left: -200px;
+    padding: 5px;
+  } 
+@font-face {
+    font-family: Digital;
+    src: url(/js/Digital.ttf);
+}  
+
+#getdigital{
+  font-family: Digital;
+ 
+}
+#grafica{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
