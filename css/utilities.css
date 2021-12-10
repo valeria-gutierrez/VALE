@@ -77,9 +77,12 @@ section{
     .hidden-mobile {
         display: none;
       }
-      Canvas {
+    Canvas {
 
-        transform: translate(0%, -50%);
-        
+        transform: translate(-5%, -50%);
+       
       } 
+    #skills{
+        height: 550px;
+    }
 } 
