@@ -11,7 +11,7 @@ function setup() {
   button.style('font-size', '15px');
   button.style("font-family", "monaco");
   button.style('background-color', col);
-  button.position(360, 470);
+  button.position(width/2, 570);
   button.mousePressed(valores);
   linea();
   texto();

@@ -1,9 +1,9 @@
 Canvas {
     position: absolute;
     top: 50%;
-    transform: translate(100%, -50%);
-    /* width: 500px;
-    height: 500px; */
+    transform: translate(110%, -50%);
+    width: 500px;
+    height: 400px;
   } 
   div {
     position: relative;
