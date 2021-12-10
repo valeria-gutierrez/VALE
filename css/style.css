@@ -197,8 +197,34 @@ img{
     height: 20px;
     border-radius: 90%;
   }
-
+/* FORM*/
+#contactme .contactform{
+    display: flex;
   
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 18px;
+    padding: 30px;
+}
+  
+input, textarea{
+    width: 24%;
+    padding: 4px 10px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid violet;
+    border-radius: 9px;
+}
+#enviar{
+  background-color: #adeee9;
+  border: outset;
+  color: black;
+  padding: 10px 22px;
+  border-radius: 6px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
   .footer{
     display: flex;
     align-items: center;

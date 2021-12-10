@@ -66,4 +66,20 @@ section{
         margin-left: auto;
         margin-right:auto;
     }
+    #contactme .contactform input{
+        width: 84%;
+        
+    }
+    #contactme .contactform textarea{
+        width: 84%;
+        
+    }
+    .hidden-mobile {
+        display: none;
+      }
+      Canvas {
+
+        transform: translate(0%, -50%);
+        
+      } 
 } 

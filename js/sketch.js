@@ -15,6 +15,7 @@ function setup() {
   button.mousePressed(valores);
   linea();
   texto();
+  cuadricula();
 }
 function cuadricula(){
  var i, j;

@@ -1,23 +1,10 @@
 Canvas {
-    position:absolute; 
-    left: 45%; 
-    margin-left: -200px;
-    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(100%, -50%);
+    /* width: 500px;
+    height: 500px; */
   } 
-@font-face {
-    font-family: Digital;
-    src: url(/js/Digital.ttf);
-}  
-
-#getdigital{
-  font-family: Digital;
- 
-}
-#grafica{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  /* text-align: center; */
-}
-
+  div {
+    position: relative;
+  }
