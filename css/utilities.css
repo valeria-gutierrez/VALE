@@ -85,10 +85,11 @@ aside hr{
         display: none;
       }
     Canvas {
-        transform: translate(-2%, -60%);
+        transform: translate(2%, -50%);
         
       } 
     #skills{
-        height: 550px;
+        height: 800px;
     }
+   
 } 

@@ -5,8 +5,9 @@ var v=0
 var b=0
 var n=0
 let r;
+let c;
 let num = 5
-var datos =[98.7,78.5,38.6,80.2,40.6,25.5];
+var datos =[98.7,78.5,38.6,80.2,40.6,25.5,50,50.3];
 var datos1 =[1,2,3];
 var margin =2;
 var h = 400 - 6 * margin;
@@ -16,110 +17,135 @@ var button1;
 var valores;
  var datosl;
 function setup() {
-  createCanvas(500,460);
+  createCanvas(400,650);
+  //background('pink');
   textFont("monaco");
-
-  drawText();
-
-  //loadFont('Computerfont.ttf', drawText);
   noStroke();
   strokeWeight(10);
-  linea();
-  text('MY COMPUTER HABILITIES',150, 30);
+  //linea();
+  drawText();
   col = color("yellow");
   button = createButton('VALORES EXACTOS');
   button.style('font-size', '15px');
   button.style("font-family", "monaco");
   button.style('background-color', col);
-  button.position(850, 640);
+  button.position(140, 790);
   button.mousePressed(valores);
-  //
-  
-  button1 = createButton('D A T O S');
+  cuadro();
+  button1 = createButton('DATOS');
   button1.style('font-size', '15px');
   button1.style("font-family", "monaco");
   button1.style('background-color', col);
-  button1.position(600, 640);
+  button1.position(180, 760);
   button1.mousePressed(letras);
+
 }
 
 function draw() {
   
   noStroke();
-  fill(random(255),random(255),random(255));
-  rect(0,50,x,40);
-  x+=3.5;
-  if(x>=300)
+  //MYSQL
+  fill('#8793ff');
+  rect(0,60,x,40,10);
+  x+=18;
+  if(x>=350)
   noLoop()   
-  fill(random(255),random(255),random(255));
-  rect(0,110,y,40);
-  y+=2.9;
+  //POSTGRESQL
+  fill('#8793ff');
+  rect(0,120,y,40,10);
+  y+=15;
   if(y>=378.5)
   noLoop()
-  //EXCEL
-  fill(random(255),random(255),random(255));
-  rect(0,170,z,40);
-  z+=2.7;
-  if(z>=380.2) noLoop()
+  //ACCESS
+  fill('#8793ff');
+  rect(0,180,z,40,10);
+  z+=6;
+  if(z>=350) noLoop()
   //HTML
-  fill(random(255),random(255),random(255));
-  rect(0,230,v,40);
-  v+=2.0;
-  if(v>=240.1) noLoop()
+  fill('#94ff8f');
+  rect(0,240,v,40,10);
+  v+=9.0;
+  if(v>=340) noLoop()
   //PYTHON
-  fill(random(255),random(255),random(255));
-  rect(0,290,b,40);
-  b+=2.2;
-  if(b>=190.5) noLoop()
+  fill('#ffff8a');
+  rect(0,300,b,40,10);
+  b+=9.5;
+  if(b>=290) noLoop()
   //JS
-  fill(random(255),random(255),random(255));
-  rect(0,350,n,40);
-  n+=0.9;
+  fill('#ffff8a');
+  rect(0,360,n,40,10);
+  n+=0.5;
   if(n>=107) noLoop()
-
+  //MICROSOFT WORD
+  fill('#7377ff');
+  rect(0,420,n,40,10);
+  n+=0;
+  if(n>=350) noLoop()
+  //MICROSOFT EXCEL
+  fill('#4bc94b');
+  rect(0,480,n,40,10);
+  n+=3.9;
+  if(n>=250) noLoop()
+  //MICROSOFT POWER POINT
+  fill('#c75e4e');
+  rect(0,540,n,40,10);
+  n+=0.9;
+  if(n>=250) noLoop()
+}
+function cuadro(){
+  fill('#bfc6d1');
+  c=60;
+  for(let k=1;k<=9;k++){
+    rect(0,c,400,40,10);
+    c+=60;
+  }
 }
 function linea()
 {
-fill("black");
+fill('#bfc6d1');
   r = 0;
   for (let i = 0; i < num; i++) {
     rect(r, 50, 4, height-120);
     r += 100; }
 }
 
-function drawText(font) {
+function drawText() {
   fill('BLACK');
-  //textFont(font,20);
 
-  text("2021",width/2,height-5);
+  text('MY COMPUTER HABILITIES ',100, 30);
   fill("BLUE");
-  text("25 %",90,415);
-  text("50%",192,415);
-  text("75%",292,415);
-  text("100%",392,415);
+  text("25%",90,595);
+  text("50%",192,595);
+  text("75%",292,595);
+  text("100%",392,595);
  
+  text('DATA BASES SOFTWARE',0,50);
+  text('WEB DESIGN',0,235);
+  text('PROGRAMMING LANGUAGES',0,295);
+  text('MICROSOFT OFFICE',0,535);
 }
 
 function valores(){
 fill("black");
 for(var g = 0; g < datos.length; g++) {
   push()
-  translate(10, g * (barWidth + 8));
+  translate(10, g * (barWidth + 10));
   text(datos[g],410, barWidth+25);
   text("%",450, barWidth+25);
   pop();
   }
 }
 
-function letras()
-{
-fill("black");
-textSize(18);
-text("MYSQL",10,75);
-text("POSTGRESQL",10,135);
-text("EXCEL",10,195);
-text("HTML 5 & CSS 3",10,255);
-text("PYTHON",10,315);
-text("JAVA SCRIPT",10,375);
-
+function letras(){
+  fill('black');
+  textSize(15);
+  text("MYSQL",10,85);
+  text("POSTGRESQL",10,145);
+  text("ACCES",10,205);
+  text("HTML 5 & CSS 3",10,265);
+  text("PYTHON",10,325);
+  text("JAVA SCRIPT",10,385);
+  text("MICROSOFT WORD",10,445);
+  text("MICROSOFT EXCEL",10,505);
+  text("MICROSOFT POWER POINT",10,565);
 }

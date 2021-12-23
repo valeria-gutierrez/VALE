@@ -1,7 +1,7 @@
  Canvas {
     position: absolute;
     top: 50%;
-    transform: translate(110%, -50%);
+    transform: translate(130%, -35%);
     width: 400px;
     height: 460px;
   }  
