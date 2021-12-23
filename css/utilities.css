@@ -72,10 +72,7 @@ aside hr{
       section .slider-container img{
         padding: 0;
     }
-    #aboutme #education hr{
-        margin-left: auto;
-        margin-right:auto;
-    }
+    
     #contactme .contactform input{
         width: 84%;
         

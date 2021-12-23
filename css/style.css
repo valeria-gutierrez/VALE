@@ -131,6 +131,9 @@ img{
 #education li{
     list-style-type: square;
 } */
+#aboutme a{
+    color: blue;
+}
 
 /*TIME LINE*/
 .con{
@@ -256,10 +259,9 @@ img{
 /* FORM*/
 #contactme .contactform{
     display: flex;
-  
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     line-height: 18px;
     padding: 30px;
 }
@@ -281,15 +283,7 @@ input, textarea{
   margin: 2px 2px;
   cursor: pointer;
 }
-#contactme .relleno{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-.relleno img{
-    width: 300px;
-    height: auto;
-}
+
   .footer{
     display: flex;
     align-items: center;
