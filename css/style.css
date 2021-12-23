@@ -112,7 +112,7 @@ img{
 }
 
 
-#education hr{
+/* #education hr{
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -130,6 +130,62 @@ img{
 }
 #education li{
     list-style-type: square;
+} */
+
+/*TIME LINE*/
+.con{
+    /* Used to position the left vertical line */
+    position: relative;
+}
+
+.container__line {
+    /* Border */
+    border-right: 3px solid #cac7f1;
+
+    /* Positioned at the left */
+    left: 16px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full height */
+    height: 100%;
+}
+
+ .container__items {
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container__item {
+    margin-bottom: 8px;
+}
+
+.container__top {
+    /* Center the content horizontally */
+    align-items: center;
+    display: flex;
+}
+
+.container__circle {
+    /* Rounded border */
+    background-color: #cac7f1;
+    border-radius: 9999px;
+
+    /* Size */
+    height: 32px;
+    width: 32px;
+}
+
+.container__title {
+    /* Take available width */
+    flex: 1;
+}
+
+.container__desc {
+    /* Make it align with the title */
+    margin-left: 48px;
 }
 /* SLIDER */
 .slider-container{
@@ -225,7 +281,15 @@ input, textarea{
   margin: 2px 2px;
   cursor: pointer;
 }
-
+#contactme .relleno{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.relleno img{
+    width: 300px;
+    height: auto;
+}
   .footer{
     display: flex;
     align-items: center;
@@ -239,3 +303,5 @@ input, textarea{
     top: 0px;
     padding: 0 30px;
 }
+
+ 

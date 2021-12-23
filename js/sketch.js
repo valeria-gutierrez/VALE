@@ -1,100 +1,125 @@
-let angles = [207.7,57.24,27.7,11.52,7.92,25.56,22.68];
-var x=230;
-var y=300;
+var x=0
+var y=0
+var z=0
+var v=0
+var b=0
+var n=0
+let r;
+let num = 5
+var datos =[98.7,78.5,38.6,80.2,40.6,25.5];
+var datos1 =[1,2,3];
+var margin =2;
+var h = 400 - 6 * margin;
+var barWidth =  (h / datos.length) * 0.8;
+var button;
+var button1;
+var valores;
+ var datosl;
 function setup() {
-  createCanvas(500, 400);
+  createCanvas(500,460);
   textFont("monaco");
-  //loadFont('/js/Digital.ttf', drawText);
- colorMode(RGB,200,100,100);
+
+  drawText();
+
+  //loadFont('Computerfont.ttf', drawText);
+  noStroke();
+  strokeWeight(10);
+  linea();
+  text('MY COMPUTER HABILITIES',150, 30);
   col = color("yellow");
   button = createButton('VALORES EXACTOS');
   button.style('font-size', '15px');
   button.style("font-family", "monaco");
   button.style('background-color', col);
-  button.position(width/2, 570);
+  button.position(850, 640);
   button.mousePressed(valores);
-  linea();
-  texto();
-  //cuadricula();
-}
-function cuadricula(){
- var i, j;
-  for(i=0;i<=width;i+=50)
-    for(j=0;j<=height;j+=50){
-      line(i,0,i,height)
-      line(0,j,width,j)
-    }
+  //
+  
+  button1 = createButton('D A T O S');
+  button1.style('font-size', '15px');
+  button1.style("font-family", "monaco");
+  button1.style('background-color', col);
+  button1.position(600, 640);
+  button1.mousePressed(letras);
 }
 
 function draw() {
-  noStroke();
-  let lastAngle = 0;
-  frameRate(0.7);
-  for (let i = 0; i < angles.length; i++) 
-  {     
-    fill(random(200),random(100),random(250));
-    
-    arc(
-      width / 2,
-      height / 2,
-      200,
-      200,
-      lastAngle,
-      lastAngle + radians(angles[i])
-    );
-    lastAngle += radians(angles[i]);
-
-  }
-
- 
-}
-
-function texto(font) {
-  fill('BLACK');
-  //textFont(font,21);
-  text('PROGRAMMING LANGUAGES',30, 40);
-  text("2021",230,380);
-  textSize(15);
-  text("MYSQL",170,350);
-  text("POSTGRESQL",30,127);
   
-  text("EXCEL",180,70);
-  text("HTML5 & CS3",360,290);
-  text("PYTHON ",380,155);
- 
-  text("C",350,127);
-  text("JAVA SCRIPT",320,75);
- 
+  noStroke();
+  fill(random(255),random(255),random(255));
+  rect(0,50,x,40);
+  x+=3.5;
+  if(x>=300)
+  noLoop()   
+  fill(random(255),random(255),random(255));
+  rect(0,110,y,40);
+  y+=2.9;
+  if(y>=378.5)
+  noLoop()
+  //EXCEL
+  fill(random(255),random(255),random(255));
+  rect(0,170,z,40);
+  z+=2.7;
+  if(z>=380.2) noLoop()
+  //HTML
+  fill(random(255),random(255),random(255));
+  rect(0,230,v,40);
+  v+=2.0;
+  if(v>=240.1) noLoop()
+  //PYTHON
+  fill(random(255),random(255),random(255));
+  rect(0,290,b,40);
+  b+=2.2;
+  if(b>=190.5) noLoop()
+  //JS
+  fill(random(255),random(255),random(255));
+  rect(0,350,n,40);
+  n+=0.9;
+  if(n>=107) noLoop()
+
 }
 function linea()
 {
-  strokeWeight(2);
-  line(230,300,230,340);
-  line(230,340,220,340);
-  //
-  line(200,120,120,120);
-  //
-  line(250,65,250,100);
-  line(250,65,230,65);
-  //
-  line(360,190,340,190);
-  line(360,190,360,270);
-  //
-  line(340,150,370,150);
-  //
-  line(310,122,340,122);
-  //
-  line(295,122,295,70);
-  line(295,70,310,70);
+fill("black");
+  r = 0;
+  for (let i = 0; i < num; i++) {
+    rect(r, 50, 4, height-120);
+    r += 100; }
+}
+
+function drawText(font) {
+  fill('BLACK');
+  //textFont(font,20);
+
+  text("2021",width/2,height-5);
+  fill("BLUE");
+  text("25 %",90,415);
+  text("50%",192,415);
+  text("75%",292,415);
+  text("100%",392,415);
+ 
 }
 
 function valores(){
 fill("black");
-text("57.7%",240,340);
-text("15.9%",80,165);  
-text("7.1%",395,200);   
-text("6.3%",360,310); 
-text("7.7%",70,90); 
-text("3.2%",380,80); 
-text("2.2%",450,135); 
+for(var g = 0; g < datos.length; g++) {
+  push()
+  translate(10, g * (barWidth + 8));
+  text(datos[g],410, barWidth+25);
+  text("%",450, barWidth+25);
+  pop();
+  }
+}
+
+function letras()
+{
+fill("black");
+textSize(18);
+text("MYSQL",10,75);
+text("POSTGRESQL",10,135);
+text("EXCEL",10,195);
+text("HTML 5 & CSS 3",10,255);
+text("PYTHON",10,315);
+text("JAVA SCRIPT",10,375);
+
 }

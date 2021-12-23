@@ -38,6 +38,16 @@ section{
     padding: 20px;
 }
 
+aside hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right:auto;
+    border-style: solid;
+    border-width: 1px;
+    color:antiquewhite;
+}
 /* MOBILE */
 @media(max-width: 768px){
     .navbar{
@@ -78,9 +88,8 @@ section{
         display: none;
       }
     Canvas {
-
-        transform: translate(-5%, -50%);
-       
+        transform: translate(-2%, -60%);
+        
       } 
     #skills{
         height: 550px;

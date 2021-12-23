@@ -1,10 +1,10 @@
-Canvas {
+ Canvas {
     position: absolute;
     top: 50%;
     transform: translate(110%, -50%);
-    width: 500px;
-    height: 400px;
-  } 
+    width: 400px;
+    height: 460px;
+  }  
   div {
     position: relative;
   }
